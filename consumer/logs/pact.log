@@ -1,0 +1,293 @@
+I, [2021-10-29T14:56:05.295079 #45521]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-29T14:56:05.295284 #45521] DEBUG -- : {
+  "description": "get all products",
+  "providerState": "products exist",
+  "request": {
+    "method": "GET",
+    "path": "/products",
+    "headers": {
+      "Authorization": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Bearer 2019-01-14T11:34:18.045Z"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "id": "09",
+        "type": "CREDIT_CARD",
+        "name": "Gem Visa"
+      },
+      "min": 1
+    }
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.301282 #45521]  INFO -- : Received request GET /products
+D, [2021-10-29T14:56:05.301354 #45521] DEBUG -- : {
+  "path": "/products",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.297Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.301626 #45521]  INFO -- : Found matching response for GET /products
+D, [2021-10-29T14:56:05.301685 #45521] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "json_class": "Pact::ArrayLike",
+    "contents": {
+      "id": "09",
+      "type": "CREDIT_CARD",
+      "name": "Gem Visa"
+    },
+    "min": 1
+  }
+}
+I, [2021-10-29T14:56:05.306865 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.309686 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.313421 #45521]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-29T14:56:05.313508 #45521] DEBUG -- : {
+  "description": "get all products",
+  "providerState": "no products exist",
+  "request": {
+    "method": "GET",
+    "path": "/products",
+    "headers": {
+      "Authorization": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Bearer 2019-01-14T11:34:18.045Z"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": [
+
+    ]
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.316629 #45521]  INFO -- : Received request GET /products
+D, [2021-10-29T14:56:05.316695 #45521] DEBUG -- : {
+  "path": "/products",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.314Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.316810 #45521]  INFO -- : Found matching response for GET /products
+D, [2021-10-29T14:56:05.316851 #45521] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": [
+
+  ]
+}
+I, [2021-10-29T14:56:05.319671 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.322337 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.325474 #45521]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-29T14:56:05.325543 #45521] DEBUG -- : {
+  "description": "get all products with no auth token",
+  "providerState": "products exist",
+  "request": {
+    "method": "GET",
+    "path": "/products"
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+    }
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.328519 #45521]  INFO -- : Received request GET /products
+D, [2021-10-29T14:56:05.328604 #45521] DEBUG -- : {
+  "path": "/products",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.326Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.328678 #45521]  INFO -- : Found matching response for GET /products
+D, [2021-10-29T14:56:05.328729 #45521] DEBUG -- : {
+  "status": 401,
+  "headers": {
+  }
+}
+I, [2021-10-29T14:56:05.332605 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.335344 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.338796 #45521]  INFO -- : Registered expected interaction GET /product/10
+D, [2021-10-29T14:56:05.338882 #45521] DEBUG -- : {
+  "description": "get product with ID 10",
+  "providerState": "product with ID 10 exists",
+  "request": {
+    "method": "GET",
+    "path": "/product/10",
+    "headers": {
+      "Authorization": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Bearer 2019-01-14T11:34:18.045Z"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "json_class": "Pact::SomethingLike",
+      "contents": {
+        "id": "10",
+        "type": "CREDIT_CARD",
+        "name": "28 Degrees"
+      }
+    }
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.341626 #45521]  INFO -- : Received request GET /product/10
+D, [2021-10-29T14:56:05.341688 #45521] DEBUG -- : {
+  "path": "/product/10",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.339Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.341786 #45521]  INFO -- : Found matching response for GET /product/10
+D, [2021-10-29T14:56:05.341849 #45521] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "json_class": "Pact::SomethingLike",
+    "contents": {
+      "id": "10",
+      "type": "CREDIT_CARD",
+      "name": "28 Degrees"
+    }
+  }
+}
+I, [2021-10-29T14:56:05.344515 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.347127 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.350202 #45521]  INFO -- : Registered expected interaction GET /product/11
+D, [2021-10-29T14:56:05.350281 #45521] DEBUG -- : {
+  "description": "get product with ID 11",
+  "providerState": "product with ID 11 does not exist",
+  "request": {
+    "method": "GET",
+    "path": "/product/11",
+    "headers": {
+      "Authorization": {
+        "json_class": "Pact::SomethingLike",
+        "contents": "Bearer 2019-01-14T11:34:18.045Z"
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "headers": {
+    }
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.352999 #45521]  INFO -- : Received request GET /product/11
+D, [2021-10-29T14:56:05.353062 #45521] DEBUG -- : {
+  "path": "/product/11",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.350Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.353152 #45521]  INFO -- : Found matching response for GET /product/11
+D, [2021-10-29T14:56:05.353214 #45521] DEBUG -- : {
+  "status": 404,
+  "headers": {
+  }
+}
+I, [2021-10-29T14:56:05.355920 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.358588 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.361536 #45521]  INFO -- : Registered expected interaction GET /product/10
+D, [2021-10-29T14:56:05.361600 #45521] DEBUG -- : {
+  "description": "get product by ID 10 with no auth token",
+  "providerState": "product with ID 10 exists",
+  "request": {
+    "method": "GET",
+    "path": "/product/10"
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+    }
+  },
+  "metadata": null
+}
+I, [2021-10-29T14:56:05.364299 #45521]  INFO -- : Received request GET /product/10
+D, [2021-10-29T14:56:05.364363 #45521] DEBUG -- : {
+  "path": "/product/10",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json, text/plain, */*",
+    "Authorization": "Bearer 2021-10-29T18:56:05.362Z",
+    "User-Agent": "axios/0.19.1",
+    "Host": "127.0.0.1:55410",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2021-10-29T14:56:05.364456 #45521]  INFO -- : Found matching response for GET /product/10
+D, [2021-10-29T14:56:05.364492 #45521] DEBUG -- : {
+  "status": 401,
+  "headers": {
+  }
+}
+I, [2021-10-29T14:56:05.368973 #45521]  INFO -- : Verifying - interactions matched
+I, [2021-10-29T14:56:05.371510 #45521]  INFO -- : Cleared interactions
+I, [2021-10-29T14:56:05.374353 #45521]  INFO -- : Writing pact for ProductService to /Users/kiran.rudrangi/source/pact-poc/consumer/pacts/frontendwebsite-productservice.json
