@@ -6,8 +6,8 @@ if (!process.env.CI && !process.env.PUBLISH_PACT) {
     return
 }
 
-let pactBrokerUrl = process.env.PACT_BROKER_URL || 'https://krudrangi.pactflow.io';
-let pactBrokerToken = process.env.PACT_BROKER_TOKEN || 'Au80BXaGOAq_qAiAgHHcTQ';
+let pactBrokerUrl = process.env.PACT_BROKER_URL || "http://localhost:8000";
+let pactBrokerToken = process.env.PACT_BROKER_TOKEN || "pact_test_token";
 
 const gitHash = require('child_process')
     .execSync('git rev-parse --short HEAD')

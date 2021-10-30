@@ -1,5 +1,5 @@
-I, [2021-10-29T14:56:05.295079 #45521]  INFO -- : Registered expected interaction GET /products
-D, [2021-10-29T14:56:05.295284 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.176479 #68681]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-30T08:52:43.176688 #68681] DEBUG -- : {
   "description": "get all products",
   "providerState": "products exist",
   "request": {
@@ -29,22 +29,22 @@ D, [2021-10-29T14:56:05.295284 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.301282 #45521]  INFO -- : Received request GET /products
-D, [2021-10-29T14:56:05.301354 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.182330 #68681]  INFO -- : Received request GET /products
+D, [2021-10-30T08:52:43.182431 #68681] DEBUG -- : {
   "path": "/products",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.297Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.178Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.301626 #45521]  INFO -- : Found matching response for GET /products
-D, [2021-10-29T14:56:05.301685 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.182692 #68681]  INFO -- : Found matching response for GET /products
+D, [2021-10-30T08:52:43.182776 #68681] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -59,10 +59,10 @@ D, [2021-10-29T14:56:05.301685 #45521] DEBUG -- : {
     "min": 1
   }
 }
-I, [2021-10-29T14:56:05.306865 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.309686 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.313421 #45521]  INFO -- : Registered expected interaction GET /products
-D, [2021-10-29T14:56:05.313508 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.187789 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.190626 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.194142 #68681]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-30T08:52:43.194222 #68681] DEBUG -- : {
   "description": "get all products",
   "providerState": "no products exist",
   "request": {
@@ -86,22 +86,22 @@ D, [2021-10-29T14:56:05.313508 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.316629 #45521]  INFO -- : Received request GET /products
-D, [2021-10-29T14:56:05.316695 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.197273 #68681]  INFO -- : Received request GET /products
+D, [2021-10-30T08:52:43.197358 #68681] DEBUG -- : {
   "path": "/products",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.314Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.194Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.316810 #45521]  INFO -- : Found matching response for GET /products
-D, [2021-10-29T14:56:05.316851 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.197446 #68681]  INFO -- : Found matching response for GET /products
+D, [2021-10-30T08:52:43.197486 #68681] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -110,10 +110,10 @@ D, [2021-10-29T14:56:05.316851 #45521] DEBUG -- : {
 
   ]
 }
-I, [2021-10-29T14:56:05.319671 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.322337 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.325474 #45521]  INFO -- : Registered expected interaction GET /products
-D, [2021-10-29T14:56:05.325543 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.200393 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.202982 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.205998 #68681]  INFO -- : Registered expected interaction GET /products
+D, [2021-10-30T08:52:43.206067 #68681] DEBUG -- : {
   "description": "get all products with no auth token",
   "providerState": "products exist",
   "request": {
@@ -127,30 +127,30 @@ D, [2021-10-29T14:56:05.325543 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.328519 #45521]  INFO -- : Received request GET /products
-D, [2021-10-29T14:56:05.328604 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.209067 #68681]  INFO -- : Received request GET /products
+D, [2021-10-30T08:52:43.209129 #68681] DEBUG -- : {
   "path": "/products",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.326Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.206Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.328678 #45521]  INFO -- : Found matching response for GET /products
-D, [2021-10-29T14:56:05.328729 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.209202 #68681]  INFO -- : Found matching response for GET /products
+D, [2021-10-30T08:52:43.209251 #68681] DEBUG -- : {
   "status": 401,
   "headers": {
   }
 }
-I, [2021-10-29T14:56:05.332605 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.335344 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.338796 #45521]  INFO -- : Registered expected interaction GET /product/10
-D, [2021-10-29T14:56:05.338882 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.213133 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.215816 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.218988 #68681]  INFO -- : Registered expected interaction GET /product/10
+D, [2021-10-30T08:52:43.219091 #68681] DEBUG -- : {
   "description": "get product with ID 10",
   "providerState": "product with ID 10 exists",
   "request": {
@@ -179,22 +179,22 @@ D, [2021-10-29T14:56:05.338882 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.341626 #45521]  INFO -- : Received request GET /product/10
-D, [2021-10-29T14:56:05.341688 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.221847 #68681]  INFO -- : Received request GET /product/10
+D, [2021-10-30T08:52:43.221912 #68681] DEBUG -- : {
   "path": "/product/10",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.339Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.219Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.341786 #45521]  INFO -- : Found matching response for GET /product/10
-D, [2021-10-29T14:56:05.341849 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.222026 #68681]  INFO -- : Found matching response for GET /product/10
+D, [2021-10-30T08:52:43.222118 #68681] DEBUG -- : {
   "status": 200,
   "headers": {
     "Content-Type": "application/json; charset=utf-8"
@@ -208,10 +208,10 @@ D, [2021-10-29T14:56:05.341849 #45521] DEBUG -- : {
     }
   }
 }
-I, [2021-10-29T14:56:05.344515 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.347127 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.350202 #45521]  INFO -- : Registered expected interaction GET /product/11
-D, [2021-10-29T14:56:05.350281 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.224711 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.227408 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.230632 #68681]  INFO -- : Registered expected interaction GET /product/11
+D, [2021-10-30T08:52:43.230732 #68681] DEBUG -- : {
   "description": "get product with ID 11",
   "providerState": "product with ID 11 does not exist",
   "request": {
@@ -231,30 +231,30 @@ D, [2021-10-29T14:56:05.350281 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.352999 #45521]  INFO -- : Received request GET /product/11
-D, [2021-10-29T14:56:05.353062 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.233397 #68681]  INFO -- : Received request GET /product/11
+D, [2021-10-30T08:52:43.233464 #68681] DEBUG -- : {
   "path": "/product/11",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.350Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.231Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.353152 #45521]  INFO -- : Found matching response for GET /product/11
-D, [2021-10-29T14:56:05.353214 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.233571 #68681]  INFO -- : Found matching response for GET /product/11
+D, [2021-10-30T08:52:43.233606 #68681] DEBUG -- : {
   "status": 404,
   "headers": {
   }
 }
-I, [2021-10-29T14:56:05.355920 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.358588 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.361536 #45521]  INFO -- : Registered expected interaction GET /product/10
-D, [2021-10-29T14:56:05.361600 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.236119 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.238421 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.241210 #68681]  INFO -- : Registered expected interaction GET /product/10
+D, [2021-10-30T08:52:43.241279 #68681] DEBUG -- : {
   "description": "get product by ID 10 with no auth token",
   "providerState": "product with ID 10 exists",
   "request": {
@@ -268,26 +268,26 @@ D, [2021-10-29T14:56:05.361600 #45521] DEBUG -- : {
   },
   "metadata": null
 }
-I, [2021-10-29T14:56:05.364299 #45521]  INFO -- : Received request GET /product/10
-D, [2021-10-29T14:56:05.364363 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.243917 #68681]  INFO -- : Received request GET /product/10
+D, [2021-10-30T08:52:43.243982 #68681] DEBUG -- : {
   "path": "/product/10",
   "query": "",
   "method": "get",
   "headers": {
     "Accept": "application/json, text/plain, */*",
-    "Authorization": "Bearer 2021-10-29T18:56:05.362Z",
+    "Authorization": "Bearer 2021-10-30T12:52:43.241Z",
     "User-Agent": "axios/0.19.1",
-    "Host": "127.0.0.1:55410",
+    "Host": "127.0.0.1:57702",
     "Connection": "close",
     "Version": "HTTP/1.1"
   }
 }
-I, [2021-10-29T14:56:05.364456 #45521]  INFO -- : Found matching response for GET /product/10
-D, [2021-10-29T14:56:05.364492 #45521] DEBUG -- : {
+I, [2021-10-30T08:52:43.244078 #68681]  INFO -- : Found matching response for GET /product/10
+D, [2021-10-30T08:52:43.244134 #68681] DEBUG -- : {
   "status": 401,
   "headers": {
   }
 }
-I, [2021-10-29T14:56:05.368973 #45521]  INFO -- : Verifying - interactions matched
-I, [2021-10-29T14:56:05.371510 #45521]  INFO -- : Cleared interactions
-I, [2021-10-29T14:56:05.374353 #45521]  INFO -- : Writing pact for ProductService to /Users/kiran.rudrangi/source/pact-poc/consumer/pacts/frontendwebsite-productservice.json
+I, [2021-10-30T08:52:43.248684 #68681]  INFO -- : Verifying - interactions matched
+I, [2021-10-30T08:52:43.251184 #68681]  INFO -- : Cleared interactions
+I, [2021-10-30T08:52:43.254163 #68681]  INFO -- : Writing pact for ProductService to /Users/kiran.rudrangi/source/pact-poc/consumer/pacts/frontendwebsite-productservice.json
