@@ -27,7 +27,7 @@ pact
         console.log('Pact contract publishing complete!');
         console.log('');
         console.log(`Head over to ${pactBrokerUrl} and login with`);
-        console.log(`=> you pact broker token: ${pactBrokerToken}`);
+        console.log(`=> your pact broker token.`);
         console.log('to see your published contracts.')
     })
     .catch(e => {
