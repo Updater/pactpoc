@@ -39,5 +39,6 @@ workflows:
   version: 2
   Consumer-Provider-build:
     jobs:
-    - Provider-build
     - Consumer-build
+    - Provider-build
+
