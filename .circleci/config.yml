@@ -18,19 +18,19 @@ jobs:
           name: Publish contracts from consumer
           command: CI=true npm run test:pact --prefix consumer
 
-      Provider-build:
-        docker:
-          - image: circleci/node:latest
-        steps:
-          - checkout
-          - run:
-              name: Setup environment variables
-              command:
-                echo "export PACT_BROKER_URL=$PACT_BROKER_URL" >> $BASH_ENV
-                echo "export PACT_BROKER_TOKEN=$PACT_BROKER_TOKEN" >> $BASH_ENV
-          - run:
-              name: Install project dependencies
-              command: npm install
-          - run:
-              name: Verify contracts on Provider
-              command: PACT_PUBLISH_RESULTS=true npm run test:pact --prefix provider
+  Provider-build:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Setup environment variables
+          command:
+            echo "export PACT_BROKER_URL=$PACT_BROKER_URL" >> $BASH_ENV
+            echo "export PACT_BROKER_TOKEN=$PACT_BROKER_TOKEN" >> $BASH_ENV
+      - run:
+          name: Install project dependencies
+          command: npm install
+      - run:
+          name: Verify contracts on Provider
+          command: PACT_PUBLISH_RESULTS=true npm run test:pact --prefix provider
