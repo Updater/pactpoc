@@ -39,5 +39,5 @@ workflows:
   Provider-build:
    jobs:
     - Provider-build
-      requires
+      requires:
         - Consumer-build
