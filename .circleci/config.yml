@@ -37,7 +37,5 @@ jobs:
 
 workflows:
   Provider-build:
-   jobs:
-    - Provider-build
-      requires:
-        - Consumer-build
+  requires:
+    - Consumer-build
