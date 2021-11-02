@@ -34,3 +34,10 @@ jobs:
       - run:
           name: Verify contracts on Provider
           command: PACT_PUBLISH_RESULTS=true npm run test:pact --prefix provider
+
+workflows:
+  Consumer-Provider-Build:
+   jobs:
+    - Provider-build
+      requires
+        - Consumer-build
