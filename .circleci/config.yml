@@ -36,7 +36,7 @@ jobs:
           command: PACT_PUBLISH_RESULTS=true npm run test:pact --prefix provider
 
 workflows:
-  Consumer-Provider-Build:
+  Provider-build:
    jobs:
     - Provider-build
       requires
